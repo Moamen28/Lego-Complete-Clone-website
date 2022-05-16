@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Create Filter Option";
+}
+@model ViewModels.FilterOptionVM
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">@ViewBag.Title</h4>
+            <form class="forms-sample" asp-controller="FilterOption" asp-action="Create" method="post">
+                <div class="form-group">
+                    <label asp-for="Name">Filter option Name</label>
+                    <input asp-for="Name" type="text" class="form-control" placeholder="Name">
+                    <span class="text-danger" asp-validation-for="Name"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="FilterID">Filter</label><br />
+                    <select asp-for="FilterID" asp-items="@(SelectList)ViewBag.FilterList">
+                        <option value="Null">Choose Filter</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary mr-2">Save</button>
+                <a asp-controller="FilterOption" asp-action="GetAll" class="btn btn-dark">Cancel</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+

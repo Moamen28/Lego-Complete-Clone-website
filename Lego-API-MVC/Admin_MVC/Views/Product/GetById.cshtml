@@ -1,0 +1,57 @@
+﻿@model Models.Models.Product
+@{
+    ViewData["Title"] = "Product Details";
+    var Img = ViewBag.Img;
+}
+
+
+<div class="row">
+
+    <h4 class="card-title">@ViewBag.Title</h4>
+
+
+    <div class="col-12 mb-4">
+        <div class="card col-12">
+            <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+                 data-mdb-ripple-color="light">
+                @foreach (var proImg in Img)
+                {
+                    <img src="~/Files/Photos/@proImg.ProdImage" width="250" height="250" class="m-3"
+                          />
+                }
+
+                    <div class="mask text-center">
+                            @*class="d-flex justify-content-start align-items-end h-100"*@
+                            <h5>
+                                <span class="badge bg-primary ms-2">Stock : @Model.ProdStock</span>
+                                <span class="badge bg-success ms-2">Piece Count :@Model.ProdPieceCount</span>
+                                <span class="badge bg-danger ms-2">For Age : @Model.ProdAge</span>
+                            </h5>
+                    </div>
+                    <div class="hover-overlay">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </div>
+
+            </div>
+            <div class="card-body text-center">
+                <h2>
+                    <h5 class="card-title mb-3 " >@Model.ProdName</h5>
+                </h2>
+                <h3 >
+                    <p>
+                        @{
+                            var str = "";
+                            if (Model.CatId != null) { str = (ViewBag.Category as List<Models.Models.Category>).FirstOrDefault(f => f.Id == Model.CatId).CatName; }
+                            else { str = "Null"; }
+                        }
+                        @str
+                    </p>
+                </h3>
+                <h6 class="mb-3">@Model.ProdPrice $</h6>
+                <hr style="color:#FFFFFF" />
+                <p>@Model.ProdDescreption</p>
+            </div>
+        </div>
+    </div>
+ </div>
+

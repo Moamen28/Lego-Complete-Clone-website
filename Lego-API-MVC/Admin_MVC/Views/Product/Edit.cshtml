@@ -1,0 +1,84 @@
+﻿
+@{
+    ViewBag.Title = "Edit Product";
+}
+
+@model ViewModels.ProductVM
+
+
+
+<link href="~/plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
+
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">@ViewBag.Title</h4>
+            <form class="forms-sample" asp-controller="Product" asp-action="Edit" method="post">
+                <div class="form-group">
+                    <label asp-for="ProdName">Product Name</label>
+                    <input type="text" asp-for="ProdName" class="form-control" placeholder="Product Name" />
+                    <span class="text-danger" asp-validation-for="ProdName"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="ProdName_Ar">Product Name_Ar</label>
+                    <input type="text" asp-for="ProdName_Ar" class="form-control" placeholder="اسم المنتج" />
+                    <span class="text-danger" asp-validation-for="ProdName_Ar"></span>
+                </div>
+
+
+                <label asp-for="MainImgURL">Upload Main Photo</label>
+                <input type="file" asp-for="MainImgURL" class="form-control" />
+                <br /><br />
+
+
+                <div class="form-group">
+                    <label asp-for="ProdPrice">Product Price</label>
+                    <input type="text" asp-for="ProdPrice" class="form-control" placeholder="Product Price" />
+                    <span class="text-danger" asp-validation-for="ProdPrice"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ProdPieceCount">Product Piece Count</label>
+                    <input type="text" asp-for="ProdPieceCount" class="form-control" placeholder="Product Piece Count" />
+                    <span class="text-danger" asp-validation-for="ProdPieceCount"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ProdAge">Product Age</label>
+                    <input type="text" asp-for="ProdAge" class="form-control" placeholder="Product Age" />
+                    <span class="text-danger" asp-validation-for="ProdAge"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ProdStock">Product Stock</label>
+                    <input type="text" asp-for="ProdStock" class="form-control" placeholder="Product Stock" />
+                    <span class="text-danger" asp-validation-for="ProdStock"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ProdDescreption">Product Description</label>
+                    <textarea asp-for="ProdDescreption" class="form-control" placeholder="Product Description"></textarea>
+                    <span class="text-danger" asp-validation-for="ProdDescreption"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ProdDescreption_Ar">Product Description_Ar</label>
+                    <textarea type="text" asp-for="ProdDescreption_Ar" class="form-control" placeholder="تفاصيل المنتج"></textarea>
+                    <span class="text-danger" asp-validation-for="ProdDescreption_Ar"></span>
+
+                </div>
+                <div class="form-group">
+                    <label asp-for="CatId">Category</label>
+                    <select asp-for="CatId" asp-items="@(SelectList)ViewBag.CategoryList">
+                        <option>Choose Category</option>
+                    </select>
+                </div>
+
+                <label asp-for="ImgURL">Upload Photo</label>
+                <input type="file" asp-for="ImgURL" class="form-control" multiple />
+                <br /><br />
+
+                <button type="submit" class="btn btn-primary mr-2">Save</button>
+                <a asp-controller="Product" asp-action="GetAll" class="btn btn-dark">Cancel</a>
+            </form>
+        </div>
+    </div>
+</div>
+

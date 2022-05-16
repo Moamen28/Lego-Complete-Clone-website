@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "cfff6e2e-860c-4e07-8856-b99ee2aa4343": {
+      "ProjectGuid": "cfff6e2e-860c-4e07-8856-b99ee2aa4343",
+      "DisplayName": "Models",
+      "ColorIndex": 0
+    },
+    "35539978-5a32-4136-b08d-16b10119a66c": {
+      "ProjectGuid": "35539978-5a32-4136-b08d-16b10119a66c",
+      "DisplayName": "Data",
+      "ColorIndex": 1
+    },
+    "787d3b4d-c9e9-4729-92c7-828b5824c237": {
+      "ProjectGuid": "787d3b4d-c9e9-4729-92c7-828b5824c237",
+      "DisplayName": "API_User",
+      "ColorIndex": 2
+    },
+    "a2bb4f76-f7c4-400c-986d-e92b538ff4b5": {
+      "ProjectGuid": "a2bb4f76-f7c4-400c-986d-e92b538ff4b5",
+      "DisplayName": "Admin_MVC",
+      "ColorIndex": 3
+    },
+    "85fe9910-c14d-4c77-8dc5-ec05cd396383": {
+      "ProjectGuid": "85fe9910-c14d-4c77-8dc5-ec05cd396383",
+      "DisplayName": "Roposityres",
+      "ColorIndex": 4
+    }
+  },
+  "NextColorIndex": 5
+}

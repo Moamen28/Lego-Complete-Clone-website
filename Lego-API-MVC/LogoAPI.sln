@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32106.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API_User", "API_User\API_User.csproj", "{787D3B4D-C9E9-4729-92C7-828B5824C237}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "Data\Data.csproj", "{35539978-5A32-4136-B08D-16B10119A66C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "Models\Models.csproj", "{CFFF6E2E-860C-4E07-8856-B99EE2AA4343}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Roposityres", "Roposityres\Roposityres.csproj", "{85FE9910-C14D-4C77-8DC5-EC05CD396383}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Admin_MVC", "Admin_MVC\Admin_MVC.csproj", "{A2BB4F76-F7C4-400C-986D-E92B538FF4B5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ViewModels", "ViewModels\ViewModels.csproj", "{7243AE36-3B8D-47CF-8989-0D3BF562A264}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{787D3B4D-C9E9-4729-92C7-828B5824C237}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{787D3B4D-C9E9-4729-92C7-828B5824C237}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{787D3B4D-C9E9-4729-92C7-828B5824C237}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{787D3B4D-C9E9-4729-92C7-828B5824C237}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35539978-5A32-4136-B08D-16B10119A66C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35539978-5A32-4136-B08D-16B10119A66C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35539978-5A32-4136-B08D-16B10119A66C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35539978-5A32-4136-B08D-16B10119A66C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFFF6E2E-860C-4E07-8856-B99EE2AA4343}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFFF6E2E-860C-4E07-8856-B99EE2AA4343}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFFF6E2E-860C-4E07-8856-B99EE2AA4343}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFFF6E2E-860C-4E07-8856-B99EE2AA4343}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85FE9910-C14D-4C77-8DC5-EC05CD396383}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85FE9910-C14D-4C77-8DC5-EC05CD396383}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85FE9910-C14D-4C77-8DC5-EC05CD396383}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85FE9910-C14D-4C77-8DC5-EC05CD396383}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2BB4F76-F7C4-400C-986D-E92B538FF4B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2BB4F76-F7C4-400C-986D-E92B538FF4B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2BB4F76-F7C4-400C-986D-E92B538FF4B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2BB4F76-F7C4-400C-986D-E92B538FF4B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7243AE36-3B8D-47CF-8989-0D3BF562A264}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7243AE36-3B8D-47CF-8989-0D3BF562A264}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7243AE36-3B8D-47CF-8989-0D3BF562A264}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7243AE36-3B8D-47CF-8989-0D3BF562A264}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {49CFE865-33D2-4B6F-AE85-9DD2CAD8D6F7}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/soheirelsman8
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Admin_MVC\\Admin_MVC.csproj
+		SccProjectName1 = Admin_MVC
+		SccLocalPath1 = Admin_MVC
+		SccProjectUniqueName2 = API_User\\API_User.csproj
+		SccProjectName2 = API_User
+		SccLocalPath2 = API_User
+		SccProjectUniqueName3 = Data\\Data.csproj
+		SccProjectName3 = Data
+		SccLocalPath3 = Data
+		SccProjectUniqueName4 = Models\\Models.csproj
+		SccProjectName4 = Models
+		SccLocalPath4 = Models
+		SccProjectUniqueName5 = Roposityres\\Roposityres.csproj
+		SccProjectName5 = Roposityres
+		SccLocalPath5 = Roposityres
+		SccProjectUniqueName6 = ViewModels\\ViewModels.csproj
+		SccProjectName6 = ViewModels
+		SccLocalPath6 = ViewModels
+	EndGlobalSection
+EndGlobal

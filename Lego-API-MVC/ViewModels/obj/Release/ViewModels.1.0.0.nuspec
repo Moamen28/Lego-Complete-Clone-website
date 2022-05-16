@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ViewModels</id>
+    <version>1.0.0</version>
+    <authors>ViewModels</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net5.0">
+        <dependency id="Models" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Identity" version="2.1.6" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Identity.EntityFrameworkCore" version="5.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="G:\finalITI\ITI Project\LegoAPI\ViewModels\bin\Release\net5.0\ViewModels.runtimeconfig.json" target="lib\net5.0\ViewModels.runtimeconfig.json" />
+    <file src="G:\finalITI\ITI Project\LegoAPI\ViewModels\bin\Release\net5.0\ViewModels.dll" target="lib\net5.0\ViewModels.dll" />
+  </files>
+</package>
